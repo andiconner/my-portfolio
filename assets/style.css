@@ -6,10 +6,19 @@
   
 
 body {
-  color: #84bf03;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  line-height: 2.5;
 }
 
+
+h2 {
+    font-size: 50pt;
+    letter-spacing: 20px;
+    color: #000;
+    
+}  
 
 /* HEADER / NAV BAR STYLES START */
 header {
@@ -31,9 +40,8 @@ header {
   }
   
   header h1 {
-    font-weight:;
     margin: 0;
-    font-size: 36px;
+    font-size: 21pt;
     color: #427e30  ;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
@@ -67,7 +75,34 @@ header {
   
   
   /* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+    background: #84bf03;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   
+  footer h2 {
+    color: #0000;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  /* END FOOTER STYLES */
+  
+
 /* HERO STYLES START */
 .hero {
     background-image: url('./images/ac_background.jpg');
@@ -81,54 +116,133 @@ header {
     background-position: 80%;
   }
 
-  .welcome {
+.welcome {
     width: 35%;
     text-align: rightleft;
     margin: 3.5%;
-    color: #000;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .welcome h2 {
-    font-size: 70px;
-    letter-spacing: 20px;
     color: #84bf03;
+    font-size: 18pt;
+    line-height: 1.2;
+}
 
-  }
-  .welcome p {
-    font-size: 33px;
+.welcome h2 {
+    font-size: 70pt;
+    color:#84bf03;
+    text-align: left;
+}
+
+.welcome p {
+    font-size:24pt;
     letter-spacing: 15px;
     padding-bottom: 50px;
-  }
+    color: #000
+}
   
-  .andi-image { 
+.andi-image { 
   padding: 0px;
   width: 40%;
   margin: 1%;
  
 }
 .button {
-    border: none;
-    color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 16pt;
+    letter-spacing: 2pt;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color:#84bf03;
-  }
-  
-  .button1 {
-    background-color:#84bf03;
-    color: white;
-  }
-  
-  .button:hover {
+    
+
     background-color: white;
     color: black;
-    border: 2px solid #84bf03;
+    border: 3px solid #84bf03;
+}
+  
+  .button:hover {
+    border: none;
+    color: white;
+    background-color:#84bf03;
+}
+/* HERO END */
+  
+
+/* SECTION TITLE STYLES START */
+.section-title {
+    font-size: 48pt;
+    color:#000;
+    padding-bottom: 0px;
+    text-align:right;
+    margin: 100px auto 35px auto;
+    width: 25%;
+}
+/* section title END */
+  
+/* ABOUT STARTS */
+.andi {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content-right {
+    width: 55%;
+    margin: 10%;
+}
+/* ABOUT end
+
+/* PORTFOLIO STARTS */
+.portfolio-wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio {
+    width: 65%;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 40%;
   }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+/* POrtfolio end
+
+/* Contact Start*/
+.contact-wrap {
+    background-image:url("./images/ac_background.jpg");
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+.contact-wrap h2 {
+    margin-left: 10px;
+}
