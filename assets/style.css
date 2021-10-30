@@ -1,24 +1,26 @@
-}* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-
 body {
   color: #000;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18pt;
+  font-size: 18px;
   line-height: 2.5;
 }
 
+h1 {
+    font-size: 70px;
+    color:#84bf03;
+    text-align: left;
+    letter-spacing: 10px;
+}
 
 h2 {
-    font-size: 50pt;
-    letter-spacing: 20px;
-    color: #000;
-    
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #000;    
 }  
+
+h4 a {
+    color:#84bf03;
+}
 
 /* HEADER / NAV BAR STYLES START */
 header {
@@ -30,51 +32,50 @@ header {
     position: sticky;
     top: 0;
     background-image: url('./images/ac_background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
-  z-index: 9999;
-  /* higher z-index brings the element to the front while a
-   lower z-index pushes it to the back.*/
-  }
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
   
-  header h1 {
-    margin: 0;
-    font-size: 21pt;
-    color: #427e30  ;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  header a {
+header a {
     text-decoration: none;
     color: #000;
   }
   
-  header nav {
+header nav {
     margin: 7px 0;
-  }
+}
   
-  header nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
+    color:black;
+}
   
-  header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-  }
+    color:black;
+}
   
-  header nav ul li a:hover {
+header nav ul li a:hover {
     color: #84bf03  ;
-  }
+}
+
+a:-webkit-any-link {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
   
   
-  /* HEADER / NAVBAR STYLES END */
+/* HEADER / NAVBAR STYLES END */
 
 /* FOOTER STYLES START */
 footer {
@@ -84,23 +85,8 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-  }
-  
-  footer h2 {
-    color: #0000;
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: #fff;
-  }
-  /* END FOOTER STYLES */
+}
+/* END FOOTER STYLES */
   
 
 /* HERO STYLES START */
@@ -114,7 +100,7 @@ footer {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
-  }
+}
 
 .welcome {
     width: 35%;
@@ -123,12 +109,6 @@ footer {
     color: #84bf03;
     font-size: 18pt;
     line-height: 1.2;
-}
-
-.welcome h2 {
-    font-size: 70pt;
-    color:#84bf03;
-    text-align: left;
 }
 
 .welcome p {
@@ -144,6 +124,7 @@ footer {
   margin: 1%;
  
 }
+
 .button {
     padding: 16px 32px;
     text-align: center;
@@ -154,8 +135,6 @@ footer {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    
-
     background-color: white;
     color: black;
     border: 3px solid #84bf03;
@@ -163,8 +142,8 @@ footer {
   
   .button:hover {
     border: none;
-    color: white;
-    background-color:#84bf03;
+    color: black;
+    background-color:#e8f1b4;
 }
 /* HERO END */
   
@@ -192,6 +171,11 @@ footer {
     width: 55%;
     margin: 10%;
 }
+
+.content-right a{
+    color:#84bf03
+}
+
 /* ABOUT end
 
 /* PORTFOLIO STARTS */
@@ -202,6 +186,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .portfolio {
     width: 65%;
 }
@@ -209,23 +194,23 @@ footer {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 40%;
-  }
+    width: 30%;
+}
   
 .gallery:hover {
     border: 1px solid #777;
-  }
+}
   
 .gallery img {
     width: 100%;
     height: auto;
-  }
+}
   
 .desc {
     padding: 15px;
     text-align: center;
-  }
-/* POrtfolio end
+}
+/* Portfolio end
 
 /* Contact Start*/
 .contact-wrap {
@@ -243,6 +228,140 @@ footer {
     background-attachment: fixed;
     background-position: 80%;
 }
-.contact-wrap h2 {
-    margin-left: 10px;
+
+.my-info {
+    width: 55%;
+    margin: 10% 10% 10% 2%;
+    font-style: none;
+}
+
+.my-info a {
+    color: #84bf03
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position:relative;
+    }
+  
+    header img {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+  
+    .welcome, .andi-image {
+      width: 100%;
+    }
+    
+    .welcome {
+      text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .andi-image {
+        object-position: center;
+        width:100%;
+    }
+  
+    .section-title {
+      width: 100%;
+      text-align: center;
+    }
+
+    .content-right {
+        text-align: center;
+    }
+    
+    .gallery {
+    width: 100%;
+      flex: 0 70%;
+    }
+    
+    .my-info{
+      flex: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .section-title  {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .content-right {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .gallery {
+        width: 100%;
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+    .andi-image {
+        width: 100%;
+        align-content: center;
+      }
+  
+    .section-title {
+      width: 100%;
+    }
+  
+    .content-right {
+      width: 100%;
+    }
+  
+    .gallery {
+        width: 100%;
+      flex: 0 100%;
+    }
+  
+    .my-info {
+      text-align: center;
+    }
+  
+    .my-info > * {
+      flex: 0 100%;
+    }
 }
