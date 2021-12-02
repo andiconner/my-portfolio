@@ -106,7 +106,7 @@ footer {
     width: 35%;
     text-align: rightleft;
     margin: 3.5%;
-    color: #84bf03;
+    color: #7a05c9;
     font-size: 18pt;
     line-height: 1.2;
 }
@@ -246,6 +246,8 @@ footer {
       padding-bottom: 0;
       justify-content: center;
       position:relative;
+      position: -webkit-sticky;
+      position: sticky;
     }
   
     header img {
@@ -277,7 +279,7 @@ footer {
     }
 
     .andi-image {
-        object-position: center;
+        text-align: center;
         width:100%;
     }
   
@@ -303,6 +305,14 @@ footer {
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position:relative;
+      position: -webkit-sticky;
+      position: sticky;
+    }
+    
     section {
       padding: 30px 15px;
     }
@@ -333,7 +343,13 @@ footer {
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position:relative;
+    position: -webkit-sticky;
+    position: sticky;
+  }
     h1 {
         width: 100%;
         text-align: center;
@@ -341,7 +357,7 @@ footer {
     
     .andi-image {
         width: 100%;
-        align-content: center;
+        text-align: center;
       }
   
     .section-title {
